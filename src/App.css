@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.navbar{
+    padding: 15px 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #ebebeb;
+    background-color: #000;
+    color: rgb(249, 77, 14);
+    border-radius: 20px;
+    margin: 15px;
+}
+.logo{
+    font-weight: 600;
+    font-size: 40px;
+}
+.navbar ul{
+    padding: 10px 30px;
+}
+.navbar ul li{
+    display:inline-flex ;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+.navbar button{
+    background-color: rgb(249, 77, 14);
+    color: black;
+    padding: 12px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: white 2px solid;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;  
+}
+.contain button{
+     margin: 20px;
+     font-size: medium;
+      background-color: black;
+  color: #ff4d00;
+  border: 2px solid #ff4d00;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contain button:hover{
+       background-color: #ebebeb;
+       border: #000 3px solid;
+       color: #000;
+
+}
+.navbar a{
+    color: white;
+    font-weight: 400;
+}
+a.active{
+    color: rgb(249, 77, 14);
+}
+.cont h1{
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.cont{
+    margin-left: 20%;
+}
+.user{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    width: 40%;
+    padding: 20px 0px; 
+}
+.users-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+.info{
+    width: 30%;
+    border: black solid 2px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 8%;
+    margin-left: 35%;
+    border:  rgb(249, 77, 14) 3px solid;
+}
+.info p{
+    padding: 25px;
+    padding-left: 20%;
+}
+.info span{
+    color:  rgb(249, 77, 14);
+}
+.fom{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 20px;
+    border: 2px solid gray;
+    padding: 20px;
+    background-color: #000;
+    margin-top: 5%;
+    margin-left: 31%;
+    border:  rgb(249, 77, 14) solid 3px;
+    border-radius: 5px;
+ 
+}
+.fom input{
+      margin-top: 20px;
+      padding: 20px;
+      font-size: medium;
+     border-radius: 10px;
+}
+.fom textarea{
+     margin-top: 20px;
+     padding: 20px;
+     font-size: medium;
+    border-radius: 10px;
+}
+.fom  button{
+    margin: 20px;
+    background-color:  rgb(249, 77, 14);
+    color: black;
+    border: white solid 2px;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 10px;
+    width: 40%;
+    margin-left: 170px;
+    font-weight: bold;
+}
+.fom button:hover{
+     background-color: white;
+     color: black;
+     font-weight: bold;
+     transition: 0.5s ease;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 20px;
+    border: 2px solid gray;
+    padding: 20px;
+    border: #000 solid 2px;
+    margin-top: 5%;
+    margin-left: 31%;
+    border-radius: 5px;
+    
+}
+.login input{
+      margin-top: 20px;
+      padding: 20px;
+     font-size: medium;
+     border-radius: 10px;
+     background-color: #000;
+     color: #fff;
+}
+.login input::placeholder{
+     color: #fff;     
+}
+.login input:focus{
+    color: #ff4d00;
+    border: 2px solid  #ff4d00;
+    outline: none;
+}
+.login  button{
+    margin: 20px;
+    background-color: black;
+    color: whitesmoke;
+    border: black solid 2px;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 10px;
+    width: 40%;
+    margin-left: 170px;
+    background-color: #ff4d00;
+     color: black;
+     font-weight: bold;
+}
+.login  button:hover{
+      background-color: #ebebeb;
+}
+.spark{
+    position: absolute;
+    left: 280px;
+    top: 270px;
+    color: rgb(249, 77, 14);
+    width: 60px;
+    height: 60px;
+    background-color: gainsboro;
+    border-radius: 50%;
+    padding: 8px;
+}
+.graph{
+    background-color: rgb(249, 77, 14);
+    border-radius: 50%;
+     width: 60px;
+    height: 60px;
+    padding: 3px;
+    position: absolute;
+    left: 330px;
+    top: 270px;
+}
+.pause{
+    background-color: rgb(249, 77, 14);
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    padding-bottom: 10px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 625px;
+    top: 158px;
+}
+.analy{
+    color: rgb(249, 77, 14);
+     width: 60px;
+    height: 60px;
+    background-color: gainsboro;
+    border-radius: 50%;
+    padding: 6px;
+}
+.ana1{
+    position: absolute;
+    left: 410px;
+    top: 250px;
+    font-size:80px;
+}
+.line2{
+    position: absolute;
+    left: 210px;
+    top: 350px;
+    font-size:80px;
+}
+.sp{
+    color: grey;
+}
+.line3{
+    position: absolute;
+    left: 410px;
+    top: 450px;
+    font-size:80px;
+}
+.img1{
+    position: absolute;
+    right: 250px;
+    top: 180px;
+    width: 400px;
+    border-radius: 20px;
+}
