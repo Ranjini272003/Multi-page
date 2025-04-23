@@ -4,11 +4,18 @@ import UserProfile from './UserProfile'
 
 const UserLayout = () => {
   return (
+
+
     <div className='cont'>
-      <h1>List of Users</h1>
+      <div className='h1main'>
+        <h1>List of Users</h1>
+      </div>
       {/* <UserProfile/> */}
-      <Outlet/>
+      <div className='details'>
+        <Outlet />
+      </div>
     </div>
+
   )
 }
 
