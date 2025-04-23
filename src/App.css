@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body{
     margin: 0%;
     padding: 0;
     position: relative;
-  
-    overflow-x: hidden;
+    height: 100%;
+    overflow-x: hidden;   
 }
 *{
     margin: 0;
@@ -20,9 +21,13 @@ body{
     border-bottom:1px solid #ebebeb;
     background-color: #000;
     color: rgb(249, 77, 14);
-    border-radius: 20px;
-    margin:15px; 
+    border-radius: 20px;    
 }
+
+.whole{
+    padding:10px;
+}
+
 .logo{
     font-weight: 600;
     font-size: 40px;
@@ -35,7 +40,7 @@ body{
     padding: 5px 10px;
     margin: 0 10px;
 }
-.navbar button{
+.btn{
     background-color: rgb(249, 77, 14);
     color: black;
     padding: 12px 25px;
@@ -44,6 +49,43 @@ body{
     font-size: 16px;
     font-weight: bold;
     border: white 2px solid;
+}
+.btntheme{
+    background-color: rgb(249, 77, 14);
+    padding-bottom: 2px;
+   
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    border: white 2px solid;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dark .btn{
+    border: 2px solid black;
+}
+.dark .btntheme{
+    border: 2px solid black;
+}
+.navbar.dark a {
+  color: black;
+  font-weight: 500;
+}
+
+.navbar.light a {
+  color: white;
+}
+
+.navbar.dark a.active {
+  color: rgb(249, 77, 14);
+}
+.navbar.light a.active {
+  color: rgb(249, 77, 14);
 }
 .contain{
     display: flex;
@@ -74,9 +116,7 @@ body{
     color: white;
     font-weight: 400;
 }
-a.active{
-    color: rgb(249, 77, 14);
-}
+
 .h1main{
     text-align: center;
 }
@@ -184,6 +224,7 @@ a.active{
     border: #000 solid 2px;
     border-radius: 5px;    
 }
+
 .login h1{
      text-align: center;
 }
@@ -223,6 +264,37 @@ a.active{
 .login  button:hover{
       background-color: #ebebeb;
 }
+
+.dark .login {
+  background-color: #1a1a1a;
+  border-color: #f4f0f0;
+  color: #f4efef;
+}
+
+.dark .login input {
+  background-color: white;
+  
+  border: 1px solid #444;
+}
+
+.dark .login input::placeholder {
+  color: #141414;
+}
+
+.dark .login input:focus {
+  color: black
+}
+
+.dark .login button {
+  background-color: #ff4d00;
+  color: #000;
+  font-weight: bold;
+}
+
+.dark .login button:hover {
+  background-color: #ffa366;
+}
+
 .spark{
     color: rgb(249, 77, 14);
     width: 60px;
@@ -297,6 +369,26 @@ a.active{
 .img{
     position: relative;
 }
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.navbar.dark {
+  background-color: #fff;
+  color: black;
+}
+
+.app{
+    min-height: 100vh;
+}
+
+
 
 @media (max-width: 1024px){
      .content{
